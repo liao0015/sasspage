@@ -1,0 +1,46 @@
+.col-3{
+	h3{
+		text-align:center;
+	}
+	p{
+		text-align:justify;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	svg{
+		margin-left:85px;
+	}
+}
+
+
+
+.col-4 {
+	h4{
+		text-align:center;
+	}
+	p{
+		text-align:justify;
+		margin-left:10px;
+		margin-right:10px;
+	}
+	button{
+		width:180px;
+		vertical-align:-8px;
+		margin-left:25px;
+		@include linear-gradient($button-color-one, $button-color-two);
+	}
+	&:first-child{
+		outline:1px solid red;
+		button{
+			vertical-align:-25px;
+			margin-left:25px;
+		}
+	}
+	&:nth-child(2){
+		button{
+			vertical-align:-25px;
+		}
+	}
+}
+
+

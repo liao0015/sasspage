@@ -1,0 +1,34 @@
+.wrapper {
+	max-width: $breakpoint-large;
+	margin: 0 auto;
+}
+
+h1{
+	margin-left:40%;
+}
+
+h2{
+	margin-left:18%;
+}
+
+.row{
+	@extend .clearfix;
+}
+
+.col-3{
+	float:left;
+	height:300px;
+	margin-bottom:20px;
+	@include equalSpaced(3, 40px, $breakpoint-large);
+	@include test(teal);
+	
+}
+
+.col-4{
+	background:yellow;
+	height:200px;
+	float:left;
+	@include equalSpaced(4, 10px, $breakpoint-large);
+	@include test(yellow);
+}
+
