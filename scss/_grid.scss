@@ -1,34 +1,63 @@
+
+html{
+	@include linear-gradient($color-theme-one,$color-theme-five);
+}
+
 .wrapper {
 	max-width: $breakpoint-large;
 	margin: 0 auto;
-}
-
-h1{
-	margin-left:40%;
-}
-
-h2{
-	margin-left:18%;
 }
 
 .row{
 	@extend .clearfix;
 }
 
-.col-3{
-	float:left;
-	height:300px;
-	margin-bottom:20px;
-	@include equalSpaced(3, 40px, $breakpoint-large);
-	@include test(teal);
+@media screen and (min-width: $breakpoint-small){
+
+	.col-3{
+		width:500px;
+		height:300px;
+		margin-left:20px;
+		margin-bottom:10px;
+		@include colorBackground($color-theme-four);
+	}
 	
+	.col-4{
+		width:500px;
+		height:150px;
+		margin-left:20px;
+		margin-bottom:10px;
+		@include colorBackground($color-theme-three);
+	}
+
 }
 
-.col-4{
-	background:yellow;
-	height:200px;
-	float:left;
-	@include equalSpaced(4, 10px, $breakpoint-large);
-	@include test(yellow);
+
+@media screen and (min-width: $breakpoint-large){
+	h1{
+	@include becomeCentered (200, $breakpoint-large);
 }
+
+h2{
+	@include becomeCentered (650, $breakpoint-large);
+}
+
+	.col-3{
+		float:left;
+		height:320px;
+		margin-bottom:20px;
+		@include equalSpaced(3, 40px, $breakpoint-large);
+		@include colorBackground($color-theme-four);
+		
+	}
+	
+	.col-4{
+		height:200px;
+		float:left;
+		@include equalSpaced(4, 10px, $breakpoint-large);
+		@include colorBackground($color-theme-three);
+	}
+
+}
+
 

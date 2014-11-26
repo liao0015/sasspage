@@ -1,10 +1,7 @@
-@mixin test($color){
+@mixin colorBackground($color){
   background:$color;
 }
 
-$container_width: 960px;
-$number_of_columns: 2;
-$margin: 120px;
 
 @mixin equalSpaced($number_of_columns,$margin,$container_width){
 	width: ($container_width - ($margin * ($number_of_columns - 1))) / $number_of_columns;
@@ -13,6 +10,11 @@ $margin: 120px;
 	&:first-child{
 		margin-left: 0;
 	}
+}
+
+
+@mixin becomeCentered($element_width,$container_width){
+	margin-left: ($container_width - $element_width)/2;
 }
 
       
