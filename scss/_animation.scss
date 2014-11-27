@@ -1,0 +1,30 @@
+/* Scss Document */
+
+@media screen and (min-width: $breakpoint-small){
+	.col-3:hover{
+		box-shadow: inset 0 0 0 5px $color-hover-one;
+		background:$color-hover-two;
+	}
+	.col-4:hover{
+		box-shadow: inset 0 0 0 5px $color-hover-one;
+		background:$color-hover-three;
+		button{
+			@include linear-gradient(green, pink);
+		}
+	}
+	
+}
+
+@media screen and (min-width: $breakpoint-large){
+	.col-3:hover{
+		box-shadow: inset 0 0 0 5px $color-hover-one;
+		background:$color-hover-two;
+	}
+	.col-4:hover{
+		box-shadow: inset 0 0 0 5px $color-hover-one;
+		background:$color-hover-three;
+		button{
+			@include linear-gradient(green, pink);
+		}
+	}
+}

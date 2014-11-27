@@ -14,8 +14,8 @@
 		}
 		svg{
 			float:left;
-			margin-left:190px;
-			margin-bottom:20px;
+			margin-left:42%;
+			margin-bottom:2%;
 		}
 	}
 	
@@ -32,7 +32,7 @@
 		button{
 			width:180px;
 			vertical-align:-8px;
-			margin-left:150px;
+			margin-left:35%;
 			@include linear-gradient($button-color-one, $button-color-two);
 		}
 	}	
@@ -66,19 +66,19 @@
 		}
 		button{
 			width:180px;
-			vertical-align:-8px;
+			vertical-align:-4px;
 			margin-left:25px;
 			@include linear-gradient($button-color-one, $button-color-two);
 		}
 		&:first-child{
 			button{
-				vertical-align:-25px;
+				vertical-align:-22px;
 				margin-left:25px;
 			}
 		}
 		&:nth-child(2){
 			button{
-				vertical-align:-25px;
+				vertical-align:-22px;
 			}
 		}
 	}
